@@ -1,4 +1,4 @@
-document.getElementById("id_logic_level_version").innerHTML = "Business level version: 2017.11.08.1"; 
+document.getElementById("id_logic_level_version").innerHTML = "Business level version: 2017.11.08.3"; 
  
  var canvas = document.getElementById("id_canvas");
  var context = canvas.getContext("2d");
@@ -12,7 +12,7 @@ document.getElementById("id_logic_level_version").innerHTML = "Business level ve
 	 var touches = e.changedTouches;
 	 for (i = 0; i < touches.length; i++){
 		 context.beginPath();
-		 context.arc(touches[i].pageX, touches[i].pageY, 10, 0, Math.PI);
+		 context.arc(touches[i].pageX, touches[i].pageY, 10, 0, 2 * Math.PI);
 		 context.stroke();
 	 }
  }
